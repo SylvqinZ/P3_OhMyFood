@@ -1,0 +1,34 @@
+.menu {
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    margin-top: -2rem;
+    
+    background-color: #f2f2f2;
+}
+
+.meal {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.39);;
+ }
+    .meals__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__title {
+        padding: 0 0 2rem 0 ;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2rem;
+    }
+    .header__menu{
+        height: 500px;
+    }
+    .header__menu img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }

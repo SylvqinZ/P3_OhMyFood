@@ -1,170 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-html {
-    font-family: "roboto", sans-serif;
+/* BASE */
+html, body {
+  font-family: "roboto", sans-serif;
+}
+
+#logo, .menu__title {
+  font-family: "shrikhand", "Roboto", sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  font-size: 1rem;
 }
 
- h3 {
-    margin: 0;
+h3, h4, p {
+  margin: 0;
 }
 
-p {
-    margin: 0;
-    font-size: 16px
+h2 {
+  margin: 1.25rem 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
+/*LAYOUT*/
 header {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.308);
-    z-index: 1000;
-    position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.308);
+  z-index: 1000;
+  position: relative;
 }
 
-    header a img {
-        height: 30px;
-        margin: auto;
-        padding: 16px ;
-        display: flex;
-        
-    }
-
-.localisation {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 16px;
-    
-}
-    .localisation__text {
-        margin-left: 5px;
-    }
-
-
-.explore {
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-    .explore__title {
-        margin: 0;
-        
-    }
-
-    .explore__text {
-        margin-bottom: 1rem;
-    }
-
-    .explore__btn {
-        background-color: rgba(176, 29, 212, 0.534);
-        border-radius: 3rem ;
-        padding: 0.8rem;
-        color: #f2f2f2;
-    }
-
-
-.container {
-    max-width: 1280px;
-    margin: auto;
+header a img {
+  height: 30px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
 }
 
-.function {
-    
-}  
+footer {
+  background-color: #353535;
+  padding: 1rem 0 0.5rem 0;
+  color: white;
+}
 
-    .function__picks{
-        display: flex;
-        padding: 0;
-        margin: 0;
-        
-        
-    }
-    .function__pick {
-        background-color: #f2f2f2;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.315);
-        padding: 1.5rem;
-        flex: 1;
-        margin: 0 0 0 2rem;
-        border-radius: 1rem;
-        align-items: center;
-    }
+.footer__logo {
+  font-size: 1.2rem;
+}
 
-    .function__pick:first-child {
-        margin-left: -0.2rem;
-    }
+.footer__text {
+  margin-bottom: 0.5rem;
+}
 
+.footer__icon {
+  margin-right: 0.5rem;
+}
+
+.menu {
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  margin-top: -2rem;
+  background-color: #f2f2f2;
+}
+
+.meal {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.39);
+}
+
+.meals__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__title {
+  padding: 0 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+
+.header__menu {
+  height: 500px;
+}
+
+.header__menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .restaurants {
-    background-color: #f2f2f2;
-    padding: 0.5rem 0 3rem 0;
-    margin-top: 2rem;
+  background-color: #f2f2f2;
+  padding: 0.5rem 0 3rem 0;
+  margin-top: 2rem;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
-    .card {
-        background-color: #ffffff;
-        border-radius: 1rem ;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 32%);
-    }
-        .card__img {
-            width: 100%;
-            height: 12rem;
-            border-radius: 1rem 1rem 0rem 0rem;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            margin: 0;
-        }
-
-        .card__title {
-            margin-bottom: 0.5rem;
-        }
-
-        .card__text {
-            padding: 0.5rem 0 0.5rem 1rem;
-            
-        }
-
-
-.footer {
-    background-color: #353535;
-    padding: 1rem 0 0.5rem 0;
-    color: white;
-
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.32);
 }
-    .footer__logo {
-        font-family: "shrikhand"; 
-        font-size: 1.2rem;
-        
-    }
 
-    .footer__text {
-        margin-bottom:  0.5rem;
-    }
+.card__img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
 
-    .footer__icon {
-        margin-right: 0.5rem;
-    }
+.card h3 {
+  margin: 0;
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__text {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.explore {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.explore__title {
+  margin: 0;
+}
+
+.explore__text {
+  margin-bottom: 1rem;
+}
+
+.explore__btn {
+  background-color: rgba(176, 29, 212, 0.534);
+  border-radius: 3rem;
+  padding: 0.8rem;
+  color: #f2f2f2;
+}
+
+.function {
+  margin: 0;
+}
+
+.function__picks {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.function__pick {
+  background-color: #f2f2f2;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.315);
+  padding: 1.5rem;
+  flex: 1;
+  margin: 0 0 0 2rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.function__pick:first-child {
+  margin-left: -0.2rem;
+}
+
+.localisation {
+  background-color: #f2f2f2;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.localisation input {
+  margin-left: 5px;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: none;
+  border-left: none;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  width: 150px;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+
+/*UTILS*/
+/* COMPONENT */
+.button {
+  padding: 2rem 0;
+  border: none;
+}
+
+.command__btn {
+  background-color: rgba(176, 29, 212, 0.534);
+  border-radius: 3rem;
+  padding: 0.8rem;
+  border: none;
+  color: #f2f2f2;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.like__btn {
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

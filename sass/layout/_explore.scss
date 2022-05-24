@@ -1,0 +1,22 @@
+.explore {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+    .explore__title {
+        margin: 0;
+        
+    }
+
+    .explore__text {
+        margin-bottom: 1rem;
+    }
+
+    .explore__btn {
+        background-color: rgba(176, 29, 212, 0.534);
+        border-radius: 3rem ;
+        padding: 0.8rem;
+        color: #f2f2f2;
+    }
