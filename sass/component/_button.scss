@@ -6,9 +6,8 @@
     
 .command__btn {
     @include button;
+    @include flex_center;
     margin: auto;
-    display:flex;
-    justify-content: center;
     font-size: 1.25rem;
     padding: 1rem;
 }
