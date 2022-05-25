@@ -5,19 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/a385fdc71b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap">
         <link rel="stylesheet" href="css/style.css">
         <title>OhMyFood</title>
     </head>
     <body>
-        <header>
-            <a href=""><img src="img/logo/ohmyfood.png" alt="Ohmyfood Logo"></a>
+        <header class="header">
+            <div class="header__img">
+                <img src="../img/logo/ohmyfood.png" alt="Ohmyfood Logo"></a>
+            </div>
         </header>
 
         <main class="main">
             
             <section class="localisation">
                 <i class="fas fa-map-marker-alt"></i>  
-                <span class="localisation__text"><b>Paris, Belleville</b></span>
+                <input type="search" name="city__localisation" value="Paris, Belleville" placeholder="Saisir une ville" />
             </section>
 
             <section class="explore">
@@ -34,17 +37,20 @@
                 <div class="container">
                     <h2>Fonctionnement</h2>
                     <div class="function__picks">
+                        <div class="function__number">1</div>
                         <li class="function__pick">
                             <i class="fas fa-mobile-alt" ></i>
-                            <span class="text">Choisissez un restaurants</span>
+                            <span class="function__text">Choisissez un restaurants</span>
                         </li>
+                        <div class="function__number">2</div>
                         <li class="function__pick">
                             <i class="fas fa-list"></i>
-                            <span class="text">Composez votre menu</span>
+                            <span class="function__text">Composez votre menu</span>
                         </li>
+                        <div class="function__number">3</div>
                         <li class="function__pick">
                             <i class="fas fa-store"></i>
-                            <span class="text">Dégustez au restaurant</span>
+                            <span class="function__text">Dégustez au restaurant</span>
                         </li>
                     </div>
                 </div>
@@ -57,27 +63,41 @@
                         
                         <div class="card">
                             <article>
-                                <a href="#">
+                                <a href="./pages/la-palette-du-gout.html">
                                     <img class="card__img" src="img/restaurants/Palette.jpg" alt="#">
-                                    <div class="card__text">
-                                        <div class="card__title">
-                                            <h3>La palette du goût</h3>
+                                    <span class="card__badge">Nouveau</span>
+                                    <div class="card__content">
+                                        <div class="card__text">
+                                            <div class="card__title">
+                                                <h3>La palette du goût</h3>
+                                            </div>
+                                            <p>Ménilmontant</p>
                                         </div>
-                                        <p>Ménilmontant</p>
+                                        <button class="like__btn">
+                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                                        </button>
                                     </div>
+                                    
                                 </a>
+                                
                             </article>
                         </div>
                     
                         <div class="card">
                             <article>
-                                <a href="#">
+                                <a href="./pages/la-note-enchantee.html">
                                     <img class="card__img" src="img/restaurants/LaNote.jpg" alt="#">
-                                    <div class="card__text">
-                                        <div class="card__title">
-                                            <h3>La note enchantée</h3>
+                                    <span class="card__badge">Nouveau</span>
+                                    <div class="card__content">
+                                        <div class="card__text">
+                                            <div class="card__title">
+                                                <h3>La note enchantée</h3>
+                                            </div>
+                                            <p>Charonne</p>
                                         </div>
-                                        <p>Charonne</p>
+                                        <button class="like__btn">
+                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </article>
@@ -85,13 +105,18 @@
 
                         <div class="card">
                             <article>
-                                <a href="#">
+                                <a href="./pages/a-la-francaise.html">
                                     <img class="card__img" src="img/restaurants/Francaise.jpg" alt="#">
-                                    <div class="card__text">
-                                        <div class="card__title">
-                                            <h3>A la Française</h3>
+                                    <div class="card__content">
+                                        <div class="card__text">
+                                            <div class="card__title">
+                                                <h3>À la française</h3>
+                                            </div>
+                                            <p>Cité Rouge</p>
                                         </div>
-                                        <p>Cité Rouge</p>
+                                        <button class="like__btn">
+                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </article>
@@ -99,13 +124,18 @@
 
                         <div class="card">
                             <article>
-                                <a href="#">
+                                <a href="./pages/le-delice-des-sens.html">
                                     <img class="card__img" src="img/restaurants/Délice.jpg" alt="#">
-                                    <div class="card__text">
-                                        <div class="card__title">
-                                            <h3>Le délice des sens</h3>
+                                    <div class="card__content">
+                                        <div class="card__text">
+                                            <div class="card__title">
+                                                <h3>Le délice des sens</h3>
+                                            </div>
+                                            <p>Folie-Méricourt</p>
                                         </div>
-                                        <p>Folie-Méricourt</p>
+                                        <button class="like__btn">
+                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </article>
@@ -117,7 +147,7 @@
 
         <footer class="footer">
             <div class="container">
-                <span class="footer__logo">ohmyfood</span>
+                <span class="footer__logo" id="logo">ohmyfood</span>
                 <div class="footer__list">
                     <ul>
                         <li class="footer__text">
