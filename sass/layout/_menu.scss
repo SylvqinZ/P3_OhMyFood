@@ -21,9 +21,7 @@
         border-radius: 2rem;
     }
 
-    & h2{
-        margin: auto 0;
-    }
+    
     
 }
 
@@ -34,7 +32,7 @@
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.39);;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.39);
 
     &__title h3 {
         font-weight: 400;
@@ -47,7 +45,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     &__price {

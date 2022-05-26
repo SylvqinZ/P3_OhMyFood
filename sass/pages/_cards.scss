@@ -43,14 +43,16 @@
         &__badge {
             position: absolute;
             background-color: rgb(147, 225, 206) ;
-            color: rgb(29, 101, 88);
+            color: rgb(3, 145, 33);
             padding: 0.5rem;
             margin: 1rem -6rem;
         }
     }
         
-
-
+    .card:hover {
+        transform: scale(1.02);
+        transition: 0.2s;
+    }
         
 
     

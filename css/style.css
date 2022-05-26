@@ -57,7 +57,6 @@ header {
   height: 30px;
 }
 .header__img {
-  height: 30px;
   display: flex;
   margin: auto;
 }
@@ -98,9 +97,6 @@ header {
   justify-content: space-between;
   border-radius: 2rem;
 }
-.menu h2 {
-  margin: auto 0;
-}
 
 .meal {
   display: flex;
@@ -121,7 +117,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .meal__price {
   margin-left: 2rem;
@@ -141,12 +137,13 @@ header {
   border-radius: 3rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.32);
   border: none;
-  color: #f2f2f2;
+  color: #ffffff;
   cursor: pointer;
-  margin: auto;
+  margin: 2rem auto;
   font-size: 1rem;
   padding: 1rem;
   display: flex;
+  transition: 0.8s;
 }
 .btn__explore {
   padding: 0 1rem;
@@ -155,6 +152,13 @@ header {
 .btn__command {
   padding: 0 3rem;
   font-weight: 550;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+  box-shadow: 0rem 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.274);
+  transition: 0.8s ease-in-out;
 }
 
 .like__btn {
@@ -210,9 +214,14 @@ header {
 .card__badge {
   position: absolute;
   background-color: rgb(147, 225, 206);
-  color: rgb(29, 101, 88);
+  color: rgb(3, 145, 33);
   padding: 0.5rem;
   margin: 1rem -6rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 
 .explore {
@@ -265,6 +274,13 @@ header {
   border-radius: 1rem;
   align-items: center;
 }
+.function__pick:hover {
+  background-color: rgba(146, 86, 220, 0.2);
+  transition: 0.5s;
+}
+.function__pick:hover > i {
+  color: #8f45e9;
+}
 .function__pick:first-child {
   margin-left: -0.2rem;
 }
@@ -281,9 +297,13 @@ header {
   margin-left: 1rem;
   position: relative;
   color: white;
+  z-index: 100;
 }
 .function__text {
   margin-left: 0.5rem;
+}
+.function__icon {
+  color: rgba(20, 20, 20, 0.562);
 }
 
 /*# sourceMappingURL=style.css.map */
