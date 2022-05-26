@@ -1,15 +1,30 @@
-
-
- @mixin button {
-     background-color: rgba(176, 29, 212, 0.534);
-     border-radius: 3rem;
-     padding: 0.8rem ;
-     border: none;
-     color: #f2f2f2;
+@mixin shadow {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 32%);
+     
  }
 
- @mixin flex_center {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+ @mixin btn {
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    border-radius: 3rem;
+    @include shadow();
+    border: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    display: flex;
  }
+
+ @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ @mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ 

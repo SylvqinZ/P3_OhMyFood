@@ -1,14 +1,15 @@
+.btn {
+    @include btn;
 
-.button {
-    padding: 2rem 0;
-    border: none;
+    &__explore {
+        padding: 0 1rem;
+        font-weight: 450;
+    }
+    &__command {
+        padding: 0 3rem;
+        font-weight: 550;
+    }
 }
     
-.command__btn {
-    @include button;
-    @include flex_center;
-    margin: auto;
-    font-size: 1.25rem;
-    padding: 1rem;
-}
+
 

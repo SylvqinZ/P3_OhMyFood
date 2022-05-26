@@ -1,17 +1,18 @@
-footer {
+.footer {
     background-color: #353535;
     padding: 1rem 0 0.5rem 0;
     color: white;
 
+        &__logo {
+            font-size: 1.2rem;
+        }
+
+        &__text {
+            margin-bottom:  0.5rem;
+        }
+
+        &__icon {
+            margin-right: 0.5rem;
+        }
 }
-    .footer__logo {
-        font-size: 1.2rem;
-    }
-
-    .footer__text {
-        margin-bottom:  0.5rem;
-    }
-
-    .footer__icon {
-        margin-right: 0.5rem;
-    }
+    
