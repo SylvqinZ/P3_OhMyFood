@@ -1,15 +1,14 @@
 .function {
     margin: 0;
-}  
 
-    .function__picks{
+
+    &__picks{
         display: flex;
         padding: 0;
-        margin: 0;
-        
-        
+        margin: 0;  
     }
-    .function__pick {
+    
+    &__pick {
         background-color: #f2f2f2;
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.315);
         padding: 1.5rem;
@@ -19,11 +18,11 @@
         align-items: center;
     }
 
-    .function__pick:first-child {
+    &__pick:first-child {
         margin-left: -0.2rem;
     }
 
-    .function__number {
+    &__number {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,6 +37,18 @@
         color: white;
      }
 
-     .function__text {
-         margin-left: 0.5rem;
-     }
+     &__text {
+        margin-left: 0.5rem;
+    }
+}  
+
+    
+    
+
+    
+
+    
+
+     
+
+     

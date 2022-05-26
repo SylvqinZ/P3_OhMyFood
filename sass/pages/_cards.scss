@@ -12,43 +12,55 @@
     
 }
 
-    .card {
-        background-color: #ffffff;
-        border-radius: 1rem ;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 32%);
-    }
-        .card__img {
+
+.card {
+    background-color: #ffffff;
+    border-radius: 1rem ;
+    @include shadow();
+
+
+        &__img {
             width: 100%;
             height: 12rem;
             border-radius: 1rem 1rem 0rem 0rem;
             object-fit: cover;
         }
 
-        .card h3 {
-            margin: 0;
-        }
-
-        .card__title {
+        &__title {
             margin-bottom: 0.5rem;
         }
-
-        .card__content {
+        
+        &__content {
             display: flex;
             justify-content: space-between;
+            margin-right: 1rem;
         }   
 
-        .card__text {
+        &__text {
             padding: 0.5rem 0 0.5rem 1rem;
-            
         }
-
-        .card__badge {
+        
+        &__badge {
             position: absolute;
             background-color: rgb(147, 225, 206) ;
             color: rgb(29, 101, 88);
             padding: 0.5rem;
             margin: 1rem -6rem;
-
         }
+    }
         
+
+
         
+
+    
+
+        
+
+        
+
+
+
+
+    
+            

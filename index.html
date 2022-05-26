@@ -12,15 +12,16 @@
     <body>
         <header class="header">
             <div class="header__img">
-                <img src="../img/logo/ohmyfood.png" alt="Ohmyfood Logo"></a>
+                <img src="img/logo/ohmyfood.png" alt="Ohmyfood Logo"></a>
             </div>
         </header>
 
         <main class="main">
-            
-            <section class="localisation">
-                <i class="fas fa-map-marker-alt"></i>  
-                <input type="search" name="city__localisation" value="Paris, Belleville" placeholder="Saisir une ville" />
+            <section class="local">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="local__input">
+                    <input type="search" name="city__localisation" value="Paris, Belleville" placeholder="Saisir une ville" />
+                </div>  
             </section>
 
             <section class="explore">
@@ -30,7 +31,9 @@
                 <div class="explore__text">
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                 </div>
-                <a href="#" class="explore__btn"> Explorer nos restaurants</a>
+                  <button type="submit" class="btn">
+                    <span class="btn__explore">Explorer nos restaurants</span>  
+                    </button>
             </section>
         
             <section class="function">
