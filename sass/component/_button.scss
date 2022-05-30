@@ -4,22 +4,22 @@
     @include btn;
     
 
-
     &__explore {
         padding: 0 1rem;
         font-weight: 450;
     }
-    &__command {
+    &__order {
         padding: 0 3rem;
         font-weight: 550;
     }
 }
     
-
 .btn:hover {
     transform: scale(1.02);
     filter: brightness(1.10);
     box-shadow:  0rem 0rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.274);
-    transition: 0.8s ease-in-out;
+    transition: 0.8s;
     
 }
+
+

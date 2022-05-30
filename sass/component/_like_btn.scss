@@ -1,5 +1,58 @@
-.like__btn {
-    @include flex_center;
+.like {
+    left: 93%;
+    bottom: 60px;
     border: none;
     background-color: inherit;
+    cursor: pointer;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    
+
+    &__full {
+      background: linear-gradient(to top right, $secondary-color, $primary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      transition-property: transform;
+      transition-duration: 500ms;
+      transform: scale(0);
+  }
+  
+    .like:hover &__empty {
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 300ms;
+      transform: scale(0);
+    }
+
+    .like:active &__empty {
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 300ms;
+      transform: scale(0);
+    }
+    .like:focus &__empty {
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 300ms;
+      transform: scale(0);
+    }
+
+    .like:hover &__full {
+      transform: scale(1)
+    }
+
+    .like:active &__full {
+      transform: scale(1)
+    }
+
+    .like:focus &__full {
+      transform: scale(1)
+}
+
+}
+.menu__like {
+  left: 0;
+  bottom: 22px;
 }

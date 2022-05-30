@@ -1,5 +1,5 @@
 /* BASE */
-@import "./base/typography", "./base/reset";
+@import "./base/reset", "./base/typography" ;
 
 /*LAYOUT*/
 @import "./layout/header" , "./layout/footer", "./layout/menu" ;
@@ -12,4 +12,4 @@
         "./component/container";
 
 /* PAGES */
-@import "./pages/cards", "./pages/explore", "./pages/localisation", "./pages/function";
+@import "./pages/home";

@@ -4,11 +4,19 @@
     color: white;
 
         &__logo {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
+        }
+
+        &__list { 
+            margin-top: 1rem;
         }
 
         &__text {
             margin-bottom:  0.5rem;
+        }
+
+        &__text:hover {
+            text-decoration: underline;
         }
 
         &__icon {

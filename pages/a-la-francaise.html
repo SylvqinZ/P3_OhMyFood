@@ -25,15 +25,16 @@
 
         <main class="main">
             <div class="menu__header">
-                <img src="../img/restaurants/Francaise.jpg" alt="" />
+                <img src="../img/restaurants/Francaise.jpg" alt="Restaurant à la Francaise" />
             </div>
 
             <section class="menu">
                 <div class="container">
                     <div class="menu__title">
-                        <h2>À la française</h2>
-                        <button class="like__btn">
-                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                        <h2>À la Française</h2>
+                        <button class="like menu__like">
+                            <i class="like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                            <i class="like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
                         </button>
                     </div>
 
@@ -43,28 +44,37 @@
                                 <h3>ENTRÉES</h3>
                             </div>
 
-                            <div class="meal">
+                            <div class="meal meal-1">
                                 <div class="meal__text">
-                                    <h4>Tartare de poulpe acidulé</h4>
-                                    <p>Aux zestes d'orange</p>
+                                    <h4 class="meal__name">Tartare de poulpe acidulé</h4>
+                                    <p class="meal__description">Aux zestes d'orange</p>
                                 </div>
                                 <div class="meal__price">25€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
-                            <div class="meal">
+                            <div class="meal meal-2">
                                 <div class="meal__text">
-                                    <h4>Velouté de légumes d'antan</h4>
-                                    <p>Carotte, panais, topinambour</p>
+                                    <h4 class="meal__name">Velouté de légumes d'antan</h4>
+                                    <p class="meal__description">Carotte, panais, topinambour</p>
                                 </div>
                                 <div class="meal__price">35€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
-                            <div class="meal">
+                            <div class="meal meal-3">
                                 <div class="meal__text">
-                                    <h4>Soupe à l'oignon</h4>
-                                    <p>Revisitée</p>
+                                    <h4 class="meal__name">Soupe à l'oignon</h4>
+                                    <p class="meal__description">Revisitée</p>
                                 </div>
                                 <div class="meal__price">20€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -72,64 +82,80 @@
                             <div class="meal__title">
                                 <h3>PLATS</h3>
                             </div>
-                            <div class="meal">
+                            <div class="meal meal-4">
                                 <div class="meal__text">
-                                    <h4>Coquilles Saint-Jacques</h4>
-                                    <p>Accompagnées d'une purée de panais</p>
+                                    <h4 class="meal__name">Coquilles Saint-Jacques</h4>
+                                    <p class="meal__description">Accompagnées d'une purée de panais</p>
                                 </div>
                                 <div class="meal__price">40€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
-                            <div class="meal">
+                            <div class="meal meal-5">
                                 <div class="meal__text">
-                                    <h4>Magret de canard</h4>
+                                    <h4 class="meal__name">Magret de canard</h4>
                                     <p>Et parmentier de pommes de terre</p>
                                 </div>
                                 <div class="meal__price">35€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
-                            <div class="meal">
+                            <div class="meal meal-6">
                                 <div class="meal__text">
-                                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                                    <p>Sur son lit de gnocchis aux légumes</p>
+                                    <h4 class="meal__name">Pigeonneau d’Ille-et-Vilaine</h4>
+                                    <p class="meal__description">Sur son lit de gnocchis aux légumes</p>
                                 </div>
                                 <div class="meal__price">44€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="meal__column">
                             <div class="meal__title">
                                 <h3>DESSERTS</h3>
-                                <div class="meal">
+                                <div class="meal meal-7">
                                     <div class="meal__text">
-                                        <h4>Pétales de violettes glacés</h4>
-                                        <p>Et purée de noisettes</p>
+                                        <h4 class="meal__name">Pétales de violettes glacés</h4>
+                                        <p class="meal__description">Et purée de noisettes</p>
                                     </div>
                                     <div class="meal__price">18€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
 
-                                <div class="meal">
+                                <div class="meal meal-8">
                                     <div class="meal__text">
-                                        <h4>Fondant au chocolat</h4>
-                                        <p>Revisité</p>
+                                        <h4 class="meal__name">Fondant au chocolat</h4>
+                                        <p class="meal__description">Revisité</p>
                                     </div>
                                     <div class="meal__price">22€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
 
-                                <div class="meal">
+                                <div class="meal meal-9">
                                     <div class="meal__text">
-                                        <h4>Millefeuille croustillant</h4>
-                                        <p>Myrtilles et pâte d’amande</p>
+                                        <h4 class="meal__name">Millefeuille croustillant</h4>
+                                        <p class="meal__description">Myrtilles et pâte d’amande</p>
                                     </div>
                                     <div class="meal__price">23€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn">
-                        <div class="btn__command">
-                            Commander
-                        </div>
+                        <div class="btn__order">Commander</div>
                     </button>
                 </div>
             </section>

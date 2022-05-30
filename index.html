@@ -10,6 +10,11 @@
         <title>OhMyFood</title>
     </head>
     <body>
+
+        <div class="loader">
+            <div class="loader__square"></div>
+        </div>
+
         <header class="header">
             <div class="header__img">
                 <img src="img/logo/ohmyfood.png" alt="Ohmyfood Logo"></a>
@@ -67,7 +72,7 @@
                         <div class="card">
                             <article>
                                 <a href="./pages/la-palette-du-gout.html">
-                                    <img class="card__img" src="img/restaurants/Palette.jpg" alt="#">
+                                    <img class="card__img" src="img/restaurants/Palette.jpg" alt="restaurant La palette du goût">
                                     <span class="card__badge">Nouveau</span>
                                     <div class="card__content">
                                         <div class="card__text">
@@ -76,20 +81,18 @@
                                             </div>
                                             <p>Ménilmontant</p>
                                         </div>
-                                        <button class="like__btn">
-                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
-                                        </button>
                                     </div>
-                                    
                                 </a>
-                                
+                                <button class="like">
+                                    <i class=" like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                    <i class=" like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                </button>
                             </article>
                         </div>
-                    
                         <div class="card">
                             <article>
                                 <a href="./pages/la-note-enchantee.html">
-                                    <img class="card__img" src="img/restaurants/LaNote.jpg" alt="#">
+                                    <img class="card__img" src="img/restaurants/LaNote.jpg" alt="restaurant La note enchantée">
                                     <span class="card__badge">Nouveau</span>
                                     <div class="card__content">
                                         <div class="card__text">
@@ -98,37 +101,39 @@
                                             </div>
                                             <p>Charonne</p>
                                         </div>
-                                        <button class="like__btn">
-                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
-                                        </button>
                                     </div>
                                 </a>
+                                <button class="like">
+                                    <i class=" like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                    <i class=" like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                </button>
                             </article>
                         </div>
 
                         <div class="card">
                             <article>
                                 <a href="./pages/a-la-francaise.html">
-                                    <img class="card__img" src="img/restaurants/Francaise.jpg" alt="#">
+                                    <img class="card__img" src="img/restaurants/Francaise.jpg" alt="restaurant à la Francaise">
                                     <div class="card__content">
                                         <div class="card__text">
                                             <div class="card__title">
-                                                <h3>À la française</h3>
+                                                <h3>À la Française</h3>
                                             </div>
                                             <p>Cité Rouge</p>
                                         </div>
-                                        <button class="like__btn">
-                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
-                                        </button>
                                     </div>
                                 </a>
+                                <button class="like">
+                                    <i class=" like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                    <i class=" like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                </button>
                             </article>
                         </div>
 
                         <div class="card">
                             <article>
-                                <a href="./pages/le-delice-des-sens.html">
-                                    <img class="card__img" src="img/restaurants/Délice.jpg" alt="#">
+                                <a href="pages/le-delice-des-sens.html">
+                                    <img class="card__img" src="img/restaurants/Délice.jpg" alt="restaurant Le délice des sens">
                                     <div class="card__content">
                                         <div class="card__text">
                                             <div class="card__title">
@@ -136,11 +141,12 @@
                                             </div>
                                             <p>Folie-Méricourt</p>
                                         </div>
-                                        <button class="like__btn">
-                                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
-                                        </button>
                                     </div>
                                 </a>
+                                <button class="like">
+                                    <i class=" like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                    <i class=" like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
+                                </button>
                             </article>
                         </div>
                     </div>

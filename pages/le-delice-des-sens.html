@@ -25,15 +25,16 @@
 
         <main class="main">
             <div class="menu__header">
-                <img src="../img/restaurants/Délice.jpg" alt="" />
+                <img src="../img/restaurants/Délice.jpg" alt="Restaurant Le délice des sens" />
             </div>
 
             <section class="menu">
                 <div class="container">
                     <div class="menu__title">
                         <h2>Le délice des sens</h2>
-                        <button class="like__btn">
-                            <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                        <button class="like menu__like">
+                            <i class=" like__empty far fa-heart fa-stack-2x" aria-hidden="true"></i>
+                            <i class=" like__full fa fa-heart fa-stack-2x" aria-hidden="true"></i>
                         </button>
                     </div>
 
@@ -45,26 +46,35 @@
 
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Tartare de thon</h4>
-                                    <p>Assaisonné au yuzu</p>
+                                    <h4 class="meal__description">Tartare de thon</h4>
+                                    <p class="meal__name">Assaisonné au yuzu</p>
                                 </div>
                                 <div class="meal__price">25€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Bouchée de homard croustillant</h4>
-                                    <p>Et sa farandole de petits légumes</p>
+                                    <h4 class="meal__description">Bouchée de homard croustillant</h4>
+                                    <p class="meal__name">Et sa farandole de petits légumes</p>
                                 </div>
                                 <div class="meal__price">35€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Velouté de cèpes</h4>
-                                    <p>Aux truffes</p>
+                                    <h4 class="meal__description">Velouté de cèpes</h4>
+                                    <p class="meal__name">Aux truffes</p>
                                 </div>
                                 <div class="meal__price">20€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -74,26 +84,35 @@
                             </div>
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Noix de coquilles Saint-Jacques</h4>
-                                    <p>Sur lit de purée de céleri-rave</p>
+                                    <h4 class="meal__description">Noix de coquilles Saint-Jacques</h4>
+                                    <p class="meal__name">Sur lit de purée de céleri-rave</p>
                                 </div>
                                 <div class="meal__price">40€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Langouste rôtie</h4>
-                                    <p>Et ses légumes de saison</p>
+                                    <h4 class="meal__description">Langouste rôtie</h4>
+                                    <p class="meal__name">Et ses légumes de saison</p>
                                 </div>
                                 <div class="meal__price">35€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
 
                             <div class="meal">
                                 <div class="meal__text">
-                                    <h4>Côte de boeuf Angus</h4>
-                                    <p>Et sa purée de panais</p>
+                                    <h4 class="meal__description">Côte de boeuf Angus</h4>
+                                    <p class="meal__name">Et sa purée de panais</p>
                                 </div>
                                 <div class="meal__price">44€</div>
+                                <div class="meal__check">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -103,32 +122,41 @@
                             </div>
                                 <div class="meal">
                                     <div class="meal__text">
-                                        <h4>Farandole de desserts</h4>
-                                        <p>Du chef</p>
+                                        <h4 class="meal__description">Farandole de desserts</h4>
+                                        <p class="meal__name">Du chef</p>
                                     </div>
                                     <div class="meal__price">18€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
 
                                 <div class="meal">
                                     <div class="meal__text">
-                                        <h4>Crème brulée</h4>
-                                        <p>Revisitée</p>
+                                        <h4 class="meal__description" >Crème brulée</h4>
+                                        <p class="meal__name">Revisitée</p>
                                     </div>
                                     <div class="meal__price">22€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
 
                                 <div class="meal">
                                     <div class="meal__text">
-                                        <h4>Tiramisu</h4>
-                                        <p>À la noisette</p>
+                                        <h4 class="meal__description">Tiramisu</h4>
+                                        <p class="meal__name">À la noisette</p>
                                     </div>
                                     <div class="meal__price">23€</div>
+                                    <div class="meal__check">
+                                        <i class="fas fa-check"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn">
-                        <span class="btn__command">
+                        <span class="btn__order">
                             Commander
                         </span>
                     </button>                    

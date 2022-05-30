@@ -7,23 +7,19 @@ header {
     .header{
         padding: 16px ;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         
         &__back {
-            display: flex;  
-            align-items: center;
+           position: absolute;
+           left: 25px;
         }
 
         & img {
             height: 30px;
-            
+            display: flex;
         }
     
-        &__img {
-            display: flex;
-            margin: auto;
-           
-        }
     }
 
     

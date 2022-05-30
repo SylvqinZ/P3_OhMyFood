@@ -1,0 +1,240 @@
+/* LOADING SCREEN */
+
+.loader {
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    @include flex-center;  
+    animation: fadeout 3s forwards;
+
+     &__square {
+         width: 5rem;
+         height: 5rem;
+         background-color: aqua;
+         animation: spine 2s cubic-bezier(0, 0, 1, 1) forwards;
+     }
+}
+
+@keyframes fadeout {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes spine {
+      0% {
+          transform: scale(0);
+          transition: 0.1s;
+      }
+
+      15% {
+          transform: scale(1);
+          transition: 0.1s;
+      }
+       50% {
+        transform: rotateY(470deg);
+      }
+
+      100% {
+        visibility: hidden;
+      }
+    }
+
+/* LOCALISATION */
+
+    .local {
+        background-color: #f2f2f2;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+    
+            & input {
+            margin-left: 1rem;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            outline: none;
+            width: 150px;
+            }
+    
+            input[type="search"]::-webkit-search-cancel-button{
+            display: none;
+            } 
+    
+    }
+
+/* EXPLORE */
+
+    .explore {
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    
+            &__title {
+                margin: 0;
+                
+            }
+    
+            &__text {
+                margin-bottom: 1rem;
+            }
+    }
+        
+    
+/* RESTAURANT FUNCTION */
+
+    .function {
+        margin: 0;
+    
+    
+        &__picks{
+            display: flex;
+            padding: 0;
+            margin: 0;  
+        }
+        
+        &__pick {
+            background-color: #f2f2f2;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.315);
+            padding: 1.5rem;
+            flex: 1;
+            margin: 0 0 0 2rem;
+            border-radius: 1rem;
+            align-items: center;
+        }
+    
+        &__pick:hover {
+            background-color: #9256dc33;
+            transition: 0.5s;
+            
+        }
+    
+        &__pick:hover > i {
+            color: #8f45e9;
+    
+    
+        }
+    
+        &__pick:first-child {
+            margin-left: -0.2rem;
+            
+        }
+    
+        &__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #9356dc;
+            width: 1.5rem;    
+            height: 1.5rem; 
+            border-radius: 1rem;
+            margin: auto;
+            margin-right: -3rem;
+            margin-left: 1rem;
+            position: relative;
+            color: white;
+            z-index: 100;
+         }
+    
+         &__text {
+            margin-left: 0.5rem;
+        }
+        
+        &__icon {
+            color: rgba(20, 20, 20, 0.562);
+        }
+    
+        
+    }  
+
+    /* CARDS */
+
+    .restaurants {
+        background-color: #f2f2f2;
+        padding: 0.5rem 0 3rem 0;
+        margin-top: 2rem;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        
+    }
+    
+    .card {
+        background-color: #ffffff;
+        border-radius: 1rem ;
+        @include shadow();
+        height: 270px;
+       
+            &__img {
+                width: 100%;
+                height: 12rem;
+                border-radius: 1rem 1rem 0rem 0rem;
+                object-fit: cover;
+            }
+    
+            &__title {
+                margin-bottom: 0.5rem;
+            }
+            
+            &__content {
+                
+                margin-right: 1rem;
+            }   
+    
+            &__text {
+                padding: 0.5rem 0 0.5rem 1rem;
+            }
+            
+            &__badge {
+                position: absolute;
+                background-color: rgb(147, 225, 206) ;
+                color: rgb(3, 145, 33);
+                padding: 0.5rem;
+                margin: 1rem -6rem;
+            }
+        }
+            
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow:  0rem 0rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.274);
+            transition: 0.8s;
+            
+        }
+            
+    
+        
+    
+            
+    
+            
+    
+    
+    
+    
+        
+                
+    
+    
+    
+        
+        
+    
+        
+    
+        
+    
+         
+    
+         
