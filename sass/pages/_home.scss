@@ -203,6 +203,11 @@
                 color: rgb(3, 145, 33);
                 padding: 0.5rem;
                 margin: 1rem -6rem;
+                border-radius: 0.25rem;
+            }
+
+            & article a {
+                display: block;
             }
         }
             

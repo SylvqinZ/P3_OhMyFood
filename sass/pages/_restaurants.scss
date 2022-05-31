@@ -27,19 +27,20 @@
     display: flex;
     background-color: #fff;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     overflow: hidden;
-    width: 80%;
     cursor: pointer;
     border-radius: 1rem;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.39);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.20);
     animation: listAppear 1s;
     
-    
-    &__title h3 {
+    &__column {
+        overflow: hidden;
+        padding: 0 1rem;
+    }
+
+    &__title h2{
         font-weight: 400;
-        border-bottom: 3px solid #99E2D0;
-        width: 10%;
         padding-bottom: 0.5rem;
     }
 
@@ -47,7 +48,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
-        margin-bottom: 4rem;
+       
     }
 
     &__description, &__name{ 
@@ -57,7 +58,6 @@
     }
 
     &__price {
-        margin-right: 1rem;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;

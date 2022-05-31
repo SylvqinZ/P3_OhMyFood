@@ -2,14 +2,13 @@
 @import "./base/reset", "./base/typography" ;
 
 /*LAYOUT*/
-@import "./layout/header" , "./layout/footer", "./layout/menu" ;
+@import "./layout/header" , "./layout/footer" ;
 
 /*UTILS*/
 @import "./utils/mixins", "./utils/variables";
 
 /* COMPONENT */
-@import "./component/button", "./component/like_btn",
-        "./component/container";
+@import "./components/button", "./components/like_btn","./components/container";
 
 /* PAGES */
-@import "./pages/home";
+@import "./pages/home", "./pages/restaurants";
