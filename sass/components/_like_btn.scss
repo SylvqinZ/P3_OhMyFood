@@ -1,5 +1,5 @@
 .like {
-    left: 93%;
+    left: 88%;
     bottom: 60px;
     border: none;
     background-color: inherit;
@@ -7,6 +7,7 @@
     position: relative;
     width: 2rem;
     height: 2rem;
+    
     
 
     &__full {
@@ -54,5 +55,32 @@
 }
 .menu__like {
   left: 0;
+  margin-right: 15px;
   bottom: 22px;
 }
+
+
+
+@media (min-width: 768px) {
+  .like {
+    left: 94%;
+  }
+
+  .menu__like {
+    left: 0;
+    
+  }
+}
+
+@media (min-width: 991px) {
+    .like {
+      left: 93%;
+    }
+
+    .menu__like {
+      left: 0;
+      
+    }
+}
+
+  
