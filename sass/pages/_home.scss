@@ -1,50 +1,50 @@
 /* LOADING SCREEN */
 
 .loader {
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.37);
     height: 100%;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
     position: fixed;
     @include flex-center;  
     animation: fadeout 3s forwards;
-
-     &__square {
-         width: 5rem;
-         height: 5rem;
-         background-color: aqua;
-         animation: spine 2s cubic-bezier(0, 0, 1, 1) forwards;
+    
+     &__spiner {
+         animation: spine 2s forwards;
+         
+         & img {
+             height: 250px;
+             width: 250px;
+         }
      }
 }
 
 @keyframes fadeout {
-    from {
-        visibility: visible;
-    }
-    to {
+    0% {
+        z-index: 999;
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
         visibility: hidden;
-    }
+      }
 }
 
 @keyframes spine {
-      0% {
-          transform: scale(0);
-          transition: 0.1s;
+    
+    0% {
+        transform: rotateY(720deg);
       }
-
-      15% {
-          transform: scale(1);
-          transition: 0.1s;
-      }
-       50% {
-        transform: rotateY(470deg);
-      }
-
-      100% {
-        visibility: hidden;
-      }
+    
     }
 
+    
 /* LOCALISATION */
 
     .local {
@@ -83,10 +83,7 @@
                 margin: 0 ;
                 
             }
-    
-            &__title h1 {
-               
-            }
+            
             &__text {
                 margin-bottom: 1rem;
             }
@@ -141,6 +138,8 @@
             color: white;
             left: 1.75rem;
             position: absolute;
+            font-size: 14px;
+    padding-top: 1px;
             
          }
     
@@ -152,8 +151,7 @@
             color: rgba(20, 20, 20, 0.562);
         }
     
-        
-        }
+    }
  
 
     /* CARDS */

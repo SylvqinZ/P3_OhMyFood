@@ -1,8 +1,16 @@
-
-
 .btn {
-    @include btn;
-    
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    border-radius: 3rem;
+    @include shadow();
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 1rem auto;
+    font-size: 1rem;
+    padding: 1rem;
+    display: flex;
+    transition: 0.8s;
+
 
     &__explore {
         padding: 0 1rem;
@@ -12,8 +20,8 @@
         padding: 0 3rem;
         font-weight: 550;
     }
-}
-    
+ }
+     
 .btn:hover {
     transform: scale(1.02);
     filter: brightness(1.10);

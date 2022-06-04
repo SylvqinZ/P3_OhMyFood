@@ -223,7 +223,7 @@ header {
 }
 @media (min-width: 991px) {
   .like {
-    left: 93%;
+    left: 95%;
   }
 
   .menu__like {
@@ -239,45 +239,43 @@ header {
 /* PAGES */
 /* LOADING SCREEN */
 .loader {
-  background-color: rgba(255, 255, 255, 0.356);
+  background-color: rgba(255, 255, 255, 0.37);
   height: 100%;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: fadeout 3s forwards;
 }
-.loader__square {
-  width: 5rem;
-  height: 5rem;
-  background-color: aqua;
-  animation: spine 2s cubic-bezier(0, 0, 1, 1) forwards;
+.loader__spiner {
+  animation: spine 2s forwards;
+}
+.loader__spiner img {
+  height: 250px;
+  width: 250px;
 }
 
 @keyframes fadeout {
-  from {
-    visibility: visible;
+  0% {
+    z-index: 999;
+    opacity: 1;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
     visibility: hidden;
   }
 }
 @keyframes spine {
   0% {
-    transform: scale(0);
-    transition: 0.1s;
-  }
-  15% {
-    transform: scale(1);
-    transition: 0.1s;
-  }
-  50% {
-    transform: rotateY(470deg);
-  }
-  100% {
-    visibility: hidden;
+    transform: rotateY(720deg);
   }
 }
 /* LOCALISATION */
@@ -355,6 +353,8 @@ header {
   color: white;
   left: 1.75rem;
   position: absolute;
+  font-size: 14px;
+  padding-top: 1px;
 }
 .function__text {
   margin-left: 0.5rem;
@@ -464,7 +464,8 @@ header {
   cursor: pointer;
   border-radius: 1rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-  animation: listAppear 1s;
+  animation: listAppear 1s forwards;
+  opacity: 0;
 }
 .meal__column {
   overflow: hidden;
@@ -553,66 +554,6 @@ header {
   }
 }
 /* MEAL CARDS APPEAR */
-.meal-1 {
-  animation-delay: 50ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-2 {
-  animation-delay: 150ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-3 {
-  animation-delay: 300ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-4 {
-  animation-delay: 450ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-5 {
-  animation-delay: 550ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-6 {
-  animation-delay: 650ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-7 {
-  animation-delay: 750ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-8 {
-  animation-delay: 850ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-9 {
-  animation-delay: 950ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.meal-10 {
-  animation-delay: 1050ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
 @keyframes listAppear {
   from {
     transform: translateY(20px);
@@ -623,6 +564,50 @@ header {
     opacity: 1;
   }
 }
+.meal-0 {
+  animation-delay: 0ms;
+}
+
+.meal-1 {
+  animation-delay: 150ms;
+}
+
+.meal-2 {
+  animation-delay: 300ms;
+}
+
+.meal-3 {
+  animation-delay: 450ms;
+}
+
+.meal-4 {
+  animation-delay: 600ms;
+}
+
+.meal-5 {
+  animation-delay: 750ms;
+}
+
+.meal-6 {
+  animation-delay: 900ms;
+}
+
+.meal-7 {
+  animation-delay: 1050ms;
+}
+
+.meal-8 {
+  animation-delay: 1200ms;
+}
+
+.meal-9 {
+  animation-delay: 1350ms;
+}
+
+.meal-10 {
+  animation-delay: 1500ms;
+}
+
 @media (min-width: 768px) {
   .like {
     left: 94%;

@@ -32,7 +32,8 @@
     cursor: pointer;
     border-radius: 1rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.20);
-    animation: listAppear 1s;
+    animation: listAppear 1s forwards;
+    opacity: 0;
     
     &__column {
         overflow: hidden;
@@ -55,7 +56,6 @@
     }
 
     
-
     &__description, &__name{ 
         overflow: hidden;
         white-space: nowrap;
@@ -143,63 +143,6 @@
 
 /* MEAL CARDS APPEAR */ 
 
-.meal-1 {
-	animation-delay: 50ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-.meal-2 {
-	animation-delay: 150ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-.meal-3 {
-	animation-delay: 300ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-.meal-4 {
-	animation-delay: 450ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-.meal-5 {
-	animation-delay: 550ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-.meal-6 {
-	animation-delay: 650ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-.meal-7 {
-	animation-delay: 750ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-.meal-8 {
-	animation-delay: 850ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-.meal-9 {
-	animation-delay: 950ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-.meal-10 {
-	animation-delay: 1050ms;
-	animation-fill-mode: forwards;
-	opacity:0;
-}
-
-
 @keyframes listAppear {
     from {
 		transform: translateY(20px);
@@ -211,6 +154,11 @@
     }
 }
 
+@for $i from 0 through 10 {
+    .meal-#{$i} {
+        animation-delay: #{$i * 150}ms;
+    }
+}
 
 @media (min-width: 768px) {
     .like {
