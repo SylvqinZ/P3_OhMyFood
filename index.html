@@ -18,17 +18,17 @@
         </div>
         <header class="header">
             <div class="header__img">
-                <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo"></a>
+                <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
             </div>
         </header>
 
         <main class="main">
-            <section class="local">
+            <div class="local">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="local__input">
                     <input type="search" name="city__localisation" value="Paris, Belleville" placeholder="Votre ville" />
                 </div>  
-            </section>
+            </div>
 
             <section class="explore">
                 <div class="explore__title">
@@ -45,23 +45,24 @@
             <section class="function">
                 <div class="container">
                     <h2>Fonctionnement</h2>
-                    <div class="function__picks">
+                    
+                        <ol class="function__picks">
+                            <li class="function__pick">
+                                <i class="function__icon fas fa-mobile-alt" ></i>
+                                <span class="function__text">Choisissez un restaurants</span>
+                            </li>
+                            
+                            <li class="function__pick">
+                                <i class="function__icon fas fa-list"></i>
+                                <span class="function__text">Composez votre menu</span>
+                            </li>
+                            
+                            <li class="function__pick">
+                                <i class="function__icon fas fa-store"></i>
+                                <span class="function__text">Dégustez au restaurant</span>
+                            </li>
+                        </ol>
                         
-                        <li class="function__pick">
-                            <i class="function__icon fas fa-mobile-alt" ></i>
-                            <span class="function__text">Choisissez un restaurants</span>
-                        </li>
-                        
-                        <li class="function__pick">
-                            <i class="function__icon fas fa-list"></i>
-                            <span class="function__text">Composez votre menu</span>
-                        </li>
-                        
-                        <li class="function__pick">
-                            <i class="function__icon fas fa-store"></i>
-                            <span class="function__text">Dégustez au restaurant</span>
-                        </li>
-                    </div>
                 </div>
             </section>
 
@@ -183,7 +184,5 @@
                 </div>
             </div>
         </footer>
-
-
     </body>
 </html>
