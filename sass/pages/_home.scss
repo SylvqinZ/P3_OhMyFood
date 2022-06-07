@@ -61,8 +61,13 @@
             font-weight: bold;
             outline: none;
             width: 135px;
+            color: rgb(92, 90, 90);
             }
-    
+            
+            &__icon {
+                color: rgb(92, 90, 90);
+            }
+
             input[type="search"]::-webkit-search-cancel-button{
             display: none;
             } 
@@ -81,11 +86,11 @@
     
             &__title {
                 margin: 0 ;
-                
             }
             
             &__text {
                 margin-bottom: 1rem;
+                color: rgb(92, 90, 90);
             }
     }
         
@@ -139,12 +144,13 @@
             left: 1.75rem;
             position: absolute;
             font-size: 14px;
-    padding-top: 1px;
+            padding-top: 1px;
             
          }
     
          &__text {
             margin-left: 0.5rem;
+            font-weight: bold;
         }
         
         &__icon {
