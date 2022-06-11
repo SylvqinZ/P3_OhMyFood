@@ -223,7 +223,7 @@ header {
 }
 @media (min-width: 991px) {
   .like {
-    left: 95%;
+    left: 92%;
   }
 
   .menu__like {
@@ -615,15 +615,6 @@ header {
   animation-delay: 1500ms;
 }
 
-@media (min-width: 768px) {
-  .like {
-    left: 94%;
-  }
-
-  .menu__like {
-    left: 0;
-  }
-}
 @media (min-width: 1024px) {
   .meal__menu {
     display: grid;
